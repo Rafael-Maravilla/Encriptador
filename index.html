@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="icon" href="img/logo-pestania.png">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <figure class="logo-alura">
+            <img src="img/Vector.png" alt="logo de alura latam">
+        </figure>
+
+        <textarea class="caja__texto" id="texto" placeholder="Ingrese el texto aquí"></textarea>
+
+        <div class="seccion__botones">
+            <span><img class="icono" src="img/circle-exclamation-solid.svg"> Solo letras minúsculas y sin acentos</span>
+            <button id="btnEncriptar">Encriptar</button>
+            <button id="btnDesencriptar">Desencriptar</button>
+        </div>
+
+        <div class="seccion__mensaje">
+            <div class="contenido__inicial">
+                <figure class="banner">
+                    <img src="img/Muñeco.png">
+                </figure>
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingrese el texto que desees encriptar o desencriptar.</p>
+            </div>
+
+            <div class="contenedor__mensaje">
+                <textarea class="mensaje" id="mensaje" cols="30" rows="10" readonly></textarea>
+                <button class="btncopiar" id="copiar">Copiar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/encriptar.js"></script>
+</body>
+</html>
